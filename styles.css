@@ -1,23 +1,55 @@
+/* Basis-Styling */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .container {
     text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+    background-image: url('golfplatz.jpg'); /* Dein Golfplatz-Hintergrund */
+    background-size: cover; /* Hintergrund füllt den gesamten Bereich */
+    background-position: center;
+    height: 100vh; /* Volle Höhe des Viewports */
 }
 
 .face {
-    width: 300px;
+    width: 100%;  /* Volle Breite für mobile Ansicht */
+    max-width: 500px; /* Maximalbreite für Desktop */
     border-radius: 50%;
     transition: transform 0.3s ease;
 }
 
+/* Hover-Effekt */
 .face:hover {
     transform: scale(1.1);
+}
+
+h1 {
+    color: white;
+    font-size: 3rem; /* Große Überschrift */
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+p {
+    color: white;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Etwas transparent, damit der Text besser lesbar ist */
+    padding: 10px;
+}
+
+/* Responsives Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem; /* Kleinere Überschrift auf Mobilgeräten */
+    }
+
+    p {
+        font-size: 1.2rem; /* Kleineren Text auf Mobilgeräten */
+    }
 }
