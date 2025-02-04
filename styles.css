@@ -19,34 +19,39 @@ body {
 .face {
     width: 100%;  /* Volle Breite für mobile Ansicht */
     max-width: 500px; /* Maximalbreite für Desktop */
-    border-radius: 50%;
     transition: transform 0.3s ease;
 }
 
 /* Hover-Effekt */
 .face:hover {
-    transform: scale(1.1);
+    transform: scale(1.1);  /* Bild vergrößert sich beim Hover */
 }
 
 h1 {
     color: white;
-    font-size: 3rem; /* Große Überschrift */
+    font-family: 'Fredoka One', cursive; /* Abstrakte Schriftart */
+    font-size: 4rem; /* Große Überschrift */
     font-weight: bold;
     margin-top: 20px;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4), 0 0 25px rgba(255, 255, 255, 0.8), 0 0 50px rgba(255, 255, 255, 0.6);
+    letter-spacing: 2px; /* Abstände zwischen den Buchstaben */
 }
 
+/* Text unter dem Bild */
 p {
     color: white;
     font-size: 1.5rem;
     margin-top: 20px;
     background-color: rgba(0, 0, 0, 0.5); /* Etwas transparent, damit der Text besser lesbar ist */
     padding: 10px;
+    font-family: 'Fredoka One', cursive; /* Abstrakte Schriftart auch hier */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6), 0 0 15px rgba(255, 255, 255, 0.5);
 }
 
 /* Responsives Design */
 @media (max-width: 768px) {
     h1 {
-        font-size: 2rem; /* Kleinere Überschrift auf Mobilgeräten */
+        font-size: 2.5rem; /* Kleinere Überschrift auf Mobilgeräten */
     }
 
     p {

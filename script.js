@@ -1,7 +1,7 @@
-function showTime() {
-	document.getElementById('currentTime').innerHTML = new Date().toUTCString();
-}
-showTime();
-setInterval(function () {
-	showTime();
-}, 1000);
+document.getElementById('per').addEventListener('mouseover', function() {
+    this.src = 'per_lachend.jpg'; // Bild ändert sich zu lachend
+});
+
+document.getElementById('per').addEventListener('mouseout', function() {
+    this.src = 'per_taerisch.jpg'; // Bild zurücksetzen, wenn man die Maus wegzieht
+});
